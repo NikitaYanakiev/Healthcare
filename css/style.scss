@@ -99,8 +99,10 @@ header {
           background: #FFFFFF;
           box-shadow: 0 4px 22px rgba(228, 245, 252, 0.3);
           border-radius: 8px;
+
+          display: flex;
+          align-items: center;
           .form_search {
-            max-width: 215px;
             height: 59px;
             background: rgba(245, 246, 250, 0.52);
             border-radius: 8px;
@@ -116,10 +118,13 @@ header {
           }
           .select_local {
             display: inline-block;
-            padding: 0 16px;
+            padding: 0 8px;
             background: rgba(245, 246, 250, 0.52);
             border-radius: 8px;
-
+            img{
+              position: relative;
+              top: 3px;
+            }
             .form_city {
               font-family: 'Poppins', sans-serif;
               font-style: normal;
@@ -130,17 +135,23 @@ header {
               border-radius: 8px;
               box-shadow: none;
               outline: none;
-              max-width: 202px;
+
               height: 59px;
               background: rgba(245, 246, 250, 0.52);
             }
           }
           .form_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background: #40A3F8;
             border-radius: 8px;
-            padding: 21px 24px;
+            padding: 12px 17px;
             border-style: none;
             margin-left: 30px;
+            img{
+              max-width: 25px;
+            }
           }
         }
       }
@@ -176,17 +187,17 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: royalblue;
+        background-color: #DAEBF3;
         width: 80px;
         height: 80px;
         border-radius: 50%;
         margin: 0 auto;
       }
       .steps_pink{
-        background-color: pink;
+        background-color: #F7EEDA;
       }
       .steps_sky {
-        background-color: skyblue;
+        background-color: #C0E1F9;
       }
       h4{
         font-family: 'Roboto', sans-serif;
@@ -256,7 +267,13 @@ header {
       text-decoration: none;
       letter-spacing: 0.02em;
       color: #FFFFFF;
-      padding: 10px 42px 10px 19px;
+      padding: 10px 19px 10px 19px;
+      &:after{
+        content: '\f061';
+        font-family: "Font Awesome 6 Free", sans-serif;
+        font-weight: 700;
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -291,12 +308,36 @@ header {
     position: relative;
     padding-bottom: 94px;
     .service_item {
-      background-color: #FFFFFF;
+      background-color: rgba(254, 254, 254, 0.51);
       border-radius: 10px;
       box-sizing: border-box;
       padding: 60px 60px 31px 60px;
       display: flex;
       flex-direction: column;
+      position: relative;
+      &:hover{
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 120px rgba(0, 0, 0, 0.05);
+        transition: 0.4s;
+      }
+      &::before {
+        content: '';
+        display: block;
+        transition: height 0.4s linear;
+        background: #40A3F8;
+        box-shadow: 0 4px 120px rgba(0, 0, 0, 0.05);
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        opacity: 0.5;
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+      }
+      &:hover::before{
+        height: 18px;
+      }
+
 
       .service_icon {
         max-height: 70px;
@@ -326,6 +367,7 @@ header {
         color: #999999;
       }
     }
+
     .owl-nav {
       display: none;
     }
