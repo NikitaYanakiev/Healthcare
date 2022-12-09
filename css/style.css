@@ -63,18 +63,12 @@ header .navbar_item_btn:hover {
   background-size: cover;
   padding-top: 150px;
 }
-.banner .container {
-  max-width: 1200px;
-}
-.banner .container .banner_flex {
+.banner .banner_flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.banner .container .banner_flex .flex_body {
-  margin-right: 10px;
-}
-.banner .container .banner_flex .flex_body h1 {
+.banner .banner_flex .flex_body h1 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -83,10 +77,10 @@ header .navbar_item_btn:hover {
   color: #3E3E3E;
   margin-bottom: 30px;
 }
-.banner .container .banner_flex .flex_body h1 span {
+.banner .banner_flex .flex_body h1 span {
   color: #40A3F8;
 }
-.banner .container .banner_flex .flex_body p {
+.banner .banner_flex .flex_body p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -95,16 +89,16 @@ header .navbar_item_btn:hover {
   color: rgba(117, 117, 117, 0.46);
   margin-bottom: 50px;
 }
-.banner .container .banner_flex .flex_body .form_wrapper {
+.banner .banner_flex .flex_body .form_wrapper {
   padding: 13px;
   background: #FFFFFF;
   box-shadow: 0 4px 22px rgba(228, 245, 252, 0.3);
   border-radius: 8px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
-.banner .container .banner_flex .flex_body .form_wrapper .form_search {
-  height: 59px;
+.banner .banner_flex .flex_body .form_wrapper .form_search {
   background: rgba(245, 246, 250, 0.52);
   border-radius: 8px;
   border-style: none;
@@ -114,20 +108,20 @@ header .navbar_item_btn:hover {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
   margin-right: 18px;
 }
-.banner .container .banner_flex .flex_body .form_wrapper .select_local {
-  display: inline-block;
-  padding: 0 8px;
+.banner .banner_flex .flex_body .form_wrapper .select_local {
+  display: flex;
+  padding: 17px 28px;
   background: rgba(245, 246, 250, 0.52);
   border-radius: 8px;
+  margin-right: 31px;
 }
-.banner .container .banner_flex .flex_body .form_wrapper .select_local img {
-  position: relative;
-  top: 3px;
+.banner .banner_flex .flex_body .form_wrapper .select_local img {
+  margin-right: 8px;
 }
-.banner .container .banner_flex .flex_body .form_wrapper .select_local .form_city {
+.banner .banner_flex .flex_body .form_wrapper .form_city {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -137,10 +131,9 @@ header .navbar_item_btn:hover {
   border-radius: 8px;
   box-shadow: none;
   outline: none;
-  height: 59px;
   background: rgba(245, 246, 250, 0.52);
 }
-.banner .container .banner_flex .flex_body .form_wrapper .form_btn {
+.banner .banner_flex .flex_body .form_wrapper .form_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,16 +141,17 @@ header .navbar_item_btn:hover {
   border-radius: 8px;
   padding: 12px 17px;
   border-style: none;
-  margin-left: 30px;
 }
-.banner .container .banner_flex .flex_body .form_wrapper .form_btn img {
+.banner .banner_flex .flex_body .form_wrapper .form_btn img {
   max-width: 25px;
 }
-.banner .container .img_wrapper {
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  right: -100px;
+.banner .banner_flex .img_wrapper {
+  max-width: 500px;
+  min-width: 280px;
+}
+.banner .banner_flex .img_wrapper img {
+  width: 100%;
+  display: block;
 }
 
 .steps {
@@ -224,10 +218,18 @@ header .navbar_item_btn:hover {
   align-items: center;
 }
 .steps .steps_doctor .doctor_img {
-  position: relative;
-  left: -100px;
+  max-width: 550px;
+  min-width: 280px;
+  margin-bottom: 20px;
 }
-.steps .steps_doctor p {
+.steps .steps_doctor .doctor_img img {
+  width: 100%;
+  display: block;
+}
+.steps .steps_doctor .doctor_descr {
+  max-width: 510px;
+}
+.steps .steps_doctor .doctor_descr p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -236,10 +238,10 @@ header .navbar_item_btn:hover {
   letter-spacing: 0.02em;
   color: rgba(61, 61, 63, 0.7);
 }
-.steps .steps_doctor ul {
+.steps .steps_doctor .doctor_descr ul {
   list-style: none;
 }
-.steps .steps_doctor ul li {
+.steps .steps_doctor .doctor_descr ul li {
   background: url("../icon/check_blue.svg") 0 4px no-repeat;
   padding-left: 36px;
   font-family: "Roboto", sans-serif;
@@ -251,10 +253,10 @@ header .navbar_item_btn:hover {
   margin-bottom: 14px;
   color: #3D3D3F;
 }
-.steps .steps_doctor ul li:last-child {
+.steps .steps_doctor .doctor_descr ul li:last-child {
   margin-bottom: 24px;
 }
-.steps .steps_doctor .doctor_btn {
+.steps .steps_doctor .doctor_descr .doctor_btn {
   background: #40A3F8;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
@@ -266,7 +268,7 @@ header .navbar_item_btn:hover {
   color: #FFFFFF;
   padding: 10px 19px 10px 19px;
 }
-.steps .steps_doctor .doctor_btn:after {
+.steps .steps_doctor .doctor_descr .doctor_btn:after {
   content: "\f061";
   font-family: "Font Awesome 6 Free", sans-serif;
   font-weight: 700;
@@ -365,6 +367,7 @@ header .navbar_item_btn:hover {
 }
 .service .service_row .owl-dots {
   display: inline-block;
+  min-width: 250px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -427,6 +430,7 @@ header .navbar_item_btn:hover {
 .doctors_items {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .doctors_items .doctors_item {
   background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
@@ -725,6 +729,7 @@ header .navbar_item_btn:hover {
   text-decoration: none;
 }
 .subscribe_wrapper .subscribe_img {
+  max-width: 500px;
   position: absolute;
   right: 0;
   bottom: -5px;
@@ -785,10 +790,13 @@ footer .footer_wrapper .footer_inform .inform_soc a {
   text-decoration: none;
   margin-right: 16px;
 }
-footer .footer_wrapper .footer_menu {
+footer .footer_wrapper .footer_menu_row {
+  display: flex;
+}
+footer .footer_wrapper .footer_menu_row .footer_menu {
   margin-right: 115px;
 }
-footer .footer_wrapper .footer_menu h2 {
+footer .footer_wrapper .footer_menu_row .footer_menu h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -796,13 +804,13 @@ footer .footer_wrapper .footer_menu h2 {
   line-height: 16px;
   color: #323232;
 }
-footer .footer_wrapper .footer_menu .menu_items {
+footer .footer_wrapper .footer_menu_row .footer_menu .menu_items {
   list-style: none;
 }
-footer .footer_wrapper .footer_menu .menu_items li {
+footer .footer_wrapper .footer_menu_row .footer_menu .menu_items li {
   margin-top: 24px;
 }
-footer .footer_wrapper .footer_menu .menu_items li .menu_item {
+footer .footer_wrapper .footer_menu_row .footer_menu .menu_items li .menu_item {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-style: normal;
