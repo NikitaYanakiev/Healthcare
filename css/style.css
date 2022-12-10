@@ -16,12 +16,37 @@
 }
 
 header {
-  padding: 15px 0;
-  position: absolute;
+  padding: 15px 10px;
+  position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+header:before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/bg_main.jpg");
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+header .header_logo {
+  flex: 0 0 200px;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+}
+header .header_logo img {
+  max-width: 100%;
+  display: block;
 }
 header .navbar {
   list-style-type: none;
+  position: relative;
+  z-index: 4;
 }
 header .navbar_item {
   font-family: "Poppins", sans-serif;
