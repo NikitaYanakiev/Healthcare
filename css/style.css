@@ -146,9 +146,13 @@ header .navbar_item_btn:hover {
   border-radius: 8px;
   margin-right: 31px;
 }
-.banner .banner_flex .flex_body .form_wrapper .select_local img {
+.banner .banner_flex .flex_body .form_wrapper .select_local .local_img {
   margin-right: 8px;
-  width: 15px;
+  max-width: 15px;
+}
+.banner .banner_flex .flex_body .form_wrapper .select_local .local_img a {
+  width: 100%;
+  display: block;
 }
 .banner .banner_flex .flex_body .form_wrapper .form_city {
   font-family: "Poppins", sans-serif;

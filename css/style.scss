@@ -165,9 +165,13 @@ header {
           background: rgba(245, 246, 250, 0.52);
           border-radius: 8px;
           margin-right: 31px;
-          img {
+          .local_img {
             margin-right: 8px;
-            width: 15px;
+            max-width: 15px;
+            a{
+              width: 100%;
+              display: block;
+            }
           }
         }
         .form_city {
