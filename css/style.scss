@@ -38,7 +38,7 @@ $footer_text_color: #646464;
 
 header {
   padding: 15px 10px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -47,6 +47,7 @@ header {
     content: '';
     position: absolute;
     background-image: url("../images/bg_main.jpg");
+    opacity: 0;
     top: 0;
     left: 0;
     height: 100%;
