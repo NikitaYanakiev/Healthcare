@@ -199,7 +199,6 @@ header {
     .img_wrapper{
       max-width: 500px;
       min-width: 280px;
-
       img{
         width: 100%;
         display: block;
@@ -349,7 +348,6 @@ header {
     text-align: center;
     margin-bottom: 47px;
   }
-
   &_subhead {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -466,7 +464,6 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     color: #3D3D3F;
-
     position: relative;
     &:before{
       content: '';
@@ -551,7 +548,6 @@ header {
             color: #4D77CF;
             transition: 0.4s;
             border: 1px solid #4D77CF;
-
           }
           &:nth-child(2){
             background-color: #1DA1F2;
@@ -570,7 +566,6 @@ header {
               border: 1px solid #0077B5;
             }
           }
-
         }
       }
     }
@@ -722,10 +717,8 @@ header {
     }
   }
   .owl-carousel{
-
     .owl-nav {
       display: inline-block;
-
       .owl-prev{
         display: block;
         position: absolute;
@@ -751,7 +744,6 @@ header {
           display: block;
           color: $main_color;
         }
-
       }
       .owl-next{
         position: absolute;
@@ -963,7 +955,6 @@ footer{
           font-weight: 500;
           font-size: 14px;
           line-height: 16px;
-
           letter-spacing: 0.02em;
           color: #FFFFFF;
           padding: 12px 0 12px;
