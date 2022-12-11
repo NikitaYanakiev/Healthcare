@@ -546,13 +546,31 @@ header {
           align-items: center;
           margin-right: 11px;
           text-decoration: none;
+          &:hover{
+            background-color: #FFFFFF;
+            color: #4D77CF;
+            transition: 0.4s;
+            border: 1px solid #4D77CF;
+
+          }
           &:nth-child(2){
             background-color: #1DA1F2;
+            &:hover{
+              color: #1DA1F2;
+              background-color: #FFFFFF;
+              border: 1px solid #1DA1F2;
+            }
           }
           &:last-child{
             background-color: #0077B5;
             margin-right: 0;
+            &:hover{
+              color: #0077B5;
+              background-color: #FFFFFF;
+              border: 1px solid #0077B5;
+            }
           }
+
         }
       }
     }

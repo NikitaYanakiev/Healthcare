@@ -520,12 +520,28 @@ header .navbar_item_btn:hover {
   margin-right: 11px;
   text-decoration: none;
 }
+.doctors_items .doctors_item .doctors_icons .icons_item:hover {
+  background-color: #FFFFFF;
+  color: #4D77CF;
+  transition: 0.4s;
+  border: 1px solid #4D77CF;
+}
 .doctors_items .doctors_item .doctors_icons .icons_item:nth-child(2) {
   background-color: #1DA1F2;
+}
+.doctors_items .doctors_item .doctors_icons .icons_item:nth-child(2):hover {
+  color: #1DA1F2;
+  background-color: #FFFFFF;
+  border: 1px solid #1DA1F2;
 }
 .doctors_items .doctors_item .doctors_icons .icons_item:last-child {
   background-color: #0077B5;
   margin-right: 0;
+}
+.doctors_items .doctors_item .doctors_icons .icons_item:last-child:hover {
+  color: #0077B5;
+  background-color: #FFFFFF;
+  border: 1px solid #0077B5;
 }
 .doctors .doctors_wrap_btn {
   max-width: 195px;
