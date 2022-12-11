@@ -9,10 +9,11 @@ $(document).ready(function () {
         nav: true,
         navText: ['', ''],
         autoplay: true,
+        autoplayHoverPause: true,
         dots: true,
         rewind: true,
         dotsEach: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 3000,
         responsive: {
             0: {
                 items: 1,
