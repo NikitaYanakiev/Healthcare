@@ -56,7 +56,11 @@
     }
 }
 
+
 @media screen and (max-width: 768px){
+    #myBtn{
+        display: none !important;
+    }
     header{
         position: fixed;
     }
