@@ -84,6 +84,7 @@ header .navbar_item_btn:hover {
   border: 2px solid #E1E2E4;
   background-color: #FFFFFF;
   transition: 0.5s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .banner {
@@ -200,6 +201,10 @@ header .navbar_item_btn:hover {
   border-radius: 8px;
   padding: 12px 17px;
   border-style: none;
+}
+.banner .banner_flex .flex_body .form_wrapper .form_btn:hover {
+  transition: 0.5s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .banner .banner_flex .flex_body .form_wrapper .form_btn img {
   max-width: 25px;
