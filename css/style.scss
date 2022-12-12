@@ -358,6 +358,7 @@ header {
           transition: 0.5s;
           color: $main_color;
           text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         }
         &:after{
           content: '\f061';
@@ -625,6 +626,7 @@ header {
         transition: 0.5s;
         color: $main_color;
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
       }
     }
   }
@@ -848,11 +850,12 @@ header {
         text-decoration: none;
         margin-top: 21px;
         &:hover{
-          border: 2px solid #FFFFFF;
+          border: 1px solid #FFFFFF;
           background-color: $main_color;
           color: #FFFFFF;
           transition: 0.5s;
           text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         }
       }
     }
@@ -998,6 +1001,7 @@ footer{
             transition: 0.5s;
             color: $main_color;
             text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           }
         }
       }
