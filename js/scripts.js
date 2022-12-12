@@ -8,7 +8,7 @@ $(document).ready(function () {
         margin: 65,
         nav: true,
         navText: ['', ''],
-        autoplay: true,
+        autoplay: false,
         autoplayHoverPause: true,
         dots: true,
         rewind: true,
