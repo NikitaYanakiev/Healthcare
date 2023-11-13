@@ -221,6 +221,7 @@ header {
           border-radius: 8px;
           padding: 12px 17px;
           border-style: none;
+          cursor: pointer;
           &:hover {
             transition: 0.5s;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -245,6 +246,7 @@ header {
 .steps{
   background-color: $bg_color;
   padding: 75px 10px 0;
+  overflow: hidden;
   h2{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -372,6 +374,7 @@ header {
 }
 
 .service {
+  overflow: hidden;
   padding: 140px 10px 120px;
   background-color: $bg_color;
   h2 {
@@ -489,6 +492,7 @@ header {
 }
 
 .doctors{
+  overflow: hidden;
   padding: 60px 10px;
   background-color: $bg_color;
   h2 {
@@ -633,6 +637,7 @@ header {
 }
 
 .mobile{
+  overflow: hidden;
   background-color: $bg_color;
   padding: 50px 10px;
   &_wrapp{
@@ -675,6 +680,7 @@ header {
 
 
 .clients{
+  overflow: hidden;
   background-color: $bg_color;
   padding: 120px 10px 87px;
   position: relative;
@@ -740,7 +746,6 @@ header {
     }
     .clients_city{
       background: linear-gradient(90.26deg, #47C2FF 0.21%, rgba(99, 203, 254, 0.65) 97.38%);
-      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 16px;
     }
@@ -813,6 +818,7 @@ header {
 }
 
 .subscribe{
+  overflow: hidden;
   padding: 120px 0;
   background-color: $bg_color;
   &_wrapper{

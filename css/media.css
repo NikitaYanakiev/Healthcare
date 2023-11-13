@@ -1,9 +1,12 @@
 
 @media screen and (max-width: 1400px) {
-    .clients .owl-carousel .owl-nav .owl-next {
+    .clients .owl-carousel .owl-nav {
         display: none;
     }
     .clients .owl-carousel .owl-nav .owl-prev {
+        display: none;
+    }
+    .clients .owl-carousel .owl-nav .owl-next, .owl-prev {
         display: none;
     }
 }
@@ -171,11 +174,15 @@
     .subscribe_wrapper {
         padding-left: 15%;
     }
+    .steps {
+        padding: 40px 0;
+    }
+    .service {
+        padding: 50px 0;
+    }
     footer .footer_wrapper{
         flex-wrap: wrap;
         justify-content: center;
-    }
-    footer .footer_wrapper .footer_menu_row{
     }
     footer .footer_wrapper .footer_menu_row .footer_menu{
         margin-right: 70px;

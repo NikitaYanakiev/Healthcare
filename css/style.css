@@ -79,12 +79,13 @@ header .navbar_item_btn {
   color: #FFFFFF;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 0;
+  border: 2px solid #40A3F8;
+
 }
 header .navbar_item_btn:hover {
   border: 2px solid #E1E2E4;
   background-color: #FFFFFF;
   transition: 0.5s;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .banner {
@@ -201,6 +202,7 @@ header .navbar_item_btn:hover {
   border-radius: 8px;
   padding: 12px 17px;
   border-style: none;
+  cursor: pointer;
 }
 .banner .banner_flex .flex_body .form_wrapper .form_btn:hover {
   transition: 0.5s;
@@ -219,8 +221,9 @@ header .navbar_item_btn:hover {
 }
 
 .steps {
+  overflow: hidden;
   background-color: rgba(205, 233, 255, 0.3);
-  padding: 75px 10px 0;
+  padding: 75px 10px;
 }
 .steps h2 {
   font-family: "Roboto", sans-serif;
@@ -348,6 +351,7 @@ header .navbar_item_btn:hover {
 }
 
 .service {
+  overflow: hidden; 
   padding: 140px 10px 120px;
   background-color: rgba(205, 233, 255, 0.3);
 }
@@ -461,6 +465,7 @@ header .navbar_item_btn:hover {
 }
 
 .doctors {
+  overflow: hidden;
   padding: 60px 10px;
   background-color: rgba(205, 233, 255, 0.3);
 }
@@ -605,6 +610,7 @@ header .navbar_item_btn:hover {
 }
 
 .mobile {
+  overflow: hidden;
   background-color: rgba(205, 233, 255, 0.3);
   padding: 50px 10px;
 }
@@ -643,9 +649,11 @@ header .navbar_item_btn:hover {
 }
 .mobile_wrapp .mobile_descr .mobile_google {
   margin-right: 13px;
+  display: inline-flex;
 }
 
 .clients {
+  overflow: hidden;
   background-color: rgba(205, 233, 255, 0.3);
   padding: 120px 10px 87px;
   position: relative;
@@ -782,6 +790,7 @@ header .navbar_item_btn:hover {
 }
 
 .subscribe {
+  overflow: hidden;
   padding: 120px 0;
   background-color: rgba(205, 233, 255, 0.3);
 }
@@ -891,6 +900,11 @@ footer .footer_wrapper .footer_inform .inform_soc a {
   color: #FFFFFF;
   text-decoration: none;
   margin-right: 16px;
+  transition: all 0.2s;
+}
+footer .footer_wrapper .footer_inform .inform_soc a:hover {
+  background: #40A3F8;
+  transform: scale(1.1);
 }
 footer .footer_wrapper .footer_menu_row {
   display: flex;
@@ -920,6 +934,10 @@ footer .footer_wrapper .footer_menu_row .footer_menu .menu_items li .menu_item {
   font-size: 14px;
   line-height: 14px;
   color: #646464;
+}
+footer .footer_wrapper .footer_menu_row .footer_menu .menu_items li .menu_item:hover {
+  color: #40A3F8;
+
 }
 footer .footer_wrapper .menu_sub h2 {
   font-family: "DM Sans", sans-serif;
@@ -967,6 +985,7 @@ footer .footer_wrapper .menu_sub form .menu_btn {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   padding: 12px 0 12px;
+  cursor: pointer;
 }
 footer .footer_wrapper .menu_sub form .menu_btn:hover {
   background-color: #FFFFFF;
